@@ -1,0 +1,146 @@
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  left: 0px;
+  top: 0px;
+}
+
+body {
+  font-family: "Amiri", serif;
+  background-color: #aacae6;
+}
+
+/*font styles*/
+p,
+li {
+  font: 1em "Amiri", serif;
+}
+
+h1 {
+  font: 2em "Amiri", serif;
+  font-weight: 700;
+}
+
+h2 {
+  font: 1.5em "Amiri", serif;
+  font-weight: bold;
+}
+
+h3 {
+  font: 1.25em "Amiri", serif;
+  font-weight: bold;
+}
+
+h4 {
+  font: 1em "Amiri", serif;
+}
+h5 {
+  font: 0.5em "Amiri", serif;
+}
+
+/* Link styles*/
+a:link {
+  font-family: "Amiri", serif;
+  color: #000;
+  text-decoration: none;
+}
+a:visited {
+  color: #9e7272;
+}
+a:hover {
+  color: whitesmoke;
+}
+
+/*nav styles*/
+#navLinks {
+  width: auto;
+  margin-right: 10px;
+  color: #000111;
+  background-color: #4f3b3b;
+  text-decoration: underline;
+}
+
+#navLinks ul {
+  list-style: none;
+}
+
+/*header styles*/
+.header {
+  display: flex;
+  background-color: #4f3b3b;
+  color: #b4b4b4;
+  margin-left: 5px;
+  width: 100%;
+}
+
+header logo {
+  display: grid;
+  grid-column-start: 1;
+  grid-column-end: 13;
+  grid-row: 1;
+}
+
+header navLinks {
+  display: grid;
+  grid-column-start: -3;
+  grid-column-end: -1;
+  grid-row: 1;
+}
+
+.row {
+  display: flex;
+  gap: 10px;
+  /* border: 1px solid greenyellow; */
+}
+
+/* Responsive layout - makes the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 480px) {
+  .column {
+    width: 100%;
+  }
+}
+
+/*main and img styles*/
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex {
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  /* display: flex; */
+}
+
+/*footer styles*/
+.footer {
+  background-color: #4f3b3b;
+  clear: both;
+  color: #b4b4b4;
+  font-size: 75em;
+  text-align: center;
+  overflow: visible;
+  width: 100%;
+}
+
+img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (min-width: 769px) {
+  .column {
+    /* max-width: 50%; */
+  }
+}
+
+/*0@media only screen and (max-width: 480px) 
+  
+
+@media only screen and (min-width: 1024px)  */
